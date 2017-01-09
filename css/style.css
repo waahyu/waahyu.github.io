@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css?family=Arima+Madurai');
+
+body{
+	font-family: 'Arima Madurai', cursive;
+	padding-top: 20px;
+	line-height: 2;
+}
+
+.menu{
+	width:100%; /* 100% Full-height */
+    position: fixed; /* Stay in place */ 
+
+}
+
+.navbar-top .menu-top{
+	
+	font-weight: 900;
+	font-size: 16px;
+}
+
+.navbar-top .menu-top>li>a{
+	padding: 15px 0 15px 0;
+	margin-left: 20px;
+	margin-right: 20px;}
+
+.navbar-right{
+	float: right !important;
+    margin-right: 100px;
+}
+
+
+.content{
+	background-color: transparent;
+	border-color: transparent;
+	vertical-align: middle;
+
+}
+
+.content-profile{
+	vertical-align: middle;
+	position: relative;
+	margin-left: 45%;
+	margin-top: 5%;
+}
+
+.img-circle{
+	max-width: 20%;
+	height: auto;
+	vertical-align: middle;
+	
+}
+
+.name{
+	vertical-align: middle;
+	margin-left: 41%;
+}
+
+.sosmed{
+	font-size: 25pt;
+	word-spacing: 23px;
+}
+
+.footer {
+  padding: 30px;
+	padding-top: 30px;
+	text-align: center;
+}
+.footer .copyright {
+  line-height: 1.6;
+  color: #545E6C;
+  font-size: 13px;
+}
+.footer .fa-heart {
+  color: #fb866a;
