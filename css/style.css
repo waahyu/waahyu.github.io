@@ -31,6 +31,12 @@ h1{
 	position: fixed;
 }
 
+ul{
+	position: fixed;
+    top: 0;
+    width: 100%;
+}
+
 .container-profile, .img-circle{
 	height: auto;
 	max-width: 35%;
