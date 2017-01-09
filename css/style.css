@@ -63,7 +63,6 @@ ul{
 	 	padding: 30px;
 	 	padding-top: 30px;
 		text-align: center;
-		position: fixed;
 		float: bottom;
 		bottom:0;
 	}
@@ -129,7 +128,6 @@ ul{
 	 	padding: 30px;
 	 	padding-top: 30px;
 		text-align: center;
-		position: fixed;
 		float: bottom;
 	}
 	.footer .copyright {
