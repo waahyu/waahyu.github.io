@@ -1,4 +1,4 @@
-/*Dibuat tangga 9 Januari 2017
+/*Dibuat tanggal 9 Januari 2017
 
 Oleh : Wahyu Setiyono;
 Silakan hubungi via mail ke wahyusetiyono2@gmail.com
@@ -65,6 +65,7 @@ ul{
 		text-align: center;
 		position: fixed;
 		float: bottom;
+		bottom:0;
 	}
 .footer .copyright {
   line-height: 1.6;
