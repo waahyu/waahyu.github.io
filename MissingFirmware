@@ -1,0 +1,69 @@
+update-initramfs: Generating /boot/initrd.img-4.8.0-45-generic
+W: Possible missing firmware /lib/firmware/i915/kbl_dmc_ver1_01.bin for module i915
+E: Sub-process /usr/bin/dpkg returned an error code (1)
+root@mas:/# cd /mnt/
+root@mas:/mnt# wget -c https://01.org/sites/default/files/downloads/intelr-graphics-linux/kblgucver914.tar.bz2
+--2017-03-31 14:44:34--  https://01.org/sites/default/files/downloads/intelr-graphics-linux/kblgucver914.tar.bz2
+Resolving 01.org (01.org)... 198.145.21.16, 2001:19d0:306:9::2
+Connecting to 01.org (01.org)|198.145.21.16|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 68169 (67K) [application/x-bzip2]
+Saving to: 'kblgucver914.tar.bz2'
+
+kblgucver914.tar.bz2   100%[==========================>]  66.57K   236KB/s    in 0.3s    
+
+2017-03-31 14:44:36 (236 KB/s) - 'kblgucver914.tar.bz2' saved [68169/68169]
+
+root@mas:/mnt# tar xvf kblgucver914.tar.bz2 
+kbl_guc_ver9_14/
+kbl_guc_ver9_14/ReleaseNotes.txt
+kbl_guc_ver9_14/kbl_guc_ver9_14.bin
+kbl_guc_ver9_14/install.sh
+root@mas:/mnt# sh kbl_guc_ver9_14/install.sh 
+cp: cannot stat 'kbl_guc_ver9_14.bin': No such file or directory
+ERROR: Couldn't install new firmare file
+kbl_guc_ver9_14/install.sh: 15: exit: Illegal number: -1
+root@mas:/mnt# cp kbl_guc_ver9_14/kbl_guc_ver9_14.bin /lib/firmware/i915/kbl_guc_ver9_14.bin
+root@mas:/mnt# update-initramfs 
+You must specify at least one of -c, -u, or -d.
+
+Usage: /usr/sbin/update-initramfs [OPTION]...
+
+Options:
+ -k version	Specify kernel version or 'all'
+ -c		Create a new initramfs
+ -u		Update an existing initramfs
+ -d		Remove an existing initramfs
+ -t		Take over a custom initramfs with this one
+ -b directory	Set alternate boot directory
+ -v		Be verbose
+ -h		This message
+
+root@mas:/mnt# update-initramfs -u
+update-initramfs: Generating /boot/initrd.img-4.8.0-45-generic
+W: Possible missing firmware /lib/firmware/i915/kbl_dmc_ver1_01.bin for module i915
+root@mas:/mnt# rm *
+rm: cannot remove 'kbl_guc_ver9_14': Is a directory
+root@mas:/mnt# rm -rf *
+root@mas:/mnt# ls
+root@mas:/mnt# wget -c https://01.org/sites/default/files/downloads/intelr-graphics-linux/kbldmcver101.tar.bz2
+--2017-03-31 14:49:24--  https://01.org/sites/default/files/downloads/intelr-graphics-linux/kbldmcver101.tar.bz2
+Resolving 01.org (01.org)... 198.145.21.16, 2001:19d0:306:9::2
+Connecting to 01.org (01.org)|198.145.21.16|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 4249 (4.1K) [application/x-bzip2]
+Saving to: 'kbldmcver101.tar.bz2'
+
+kbldmcver101.tar.bz2   100%[==========================>]   4.15K  --.-KB/s    in 0s      
+
+2017-03-31 14:49:25 (363 MB/s) - 'kbldmcver101.tar.bz2' saved [4249/4249]
+
+root@mas:/mnt# tar xvf kbldmcver101.tar.bz2 
+kbl_dmc_ver1_01/
+kbl_dmc_ver1_01/kbl_dmc_ver1_01.bin
+kbl_dmc_ver1_01/ReleaseNotes.txt
+kbl_dmc_ver1_01/install.sh
+root@mas:/mnt# cp kbl_dmc_ver1_01/kbl_dmc_ver1_01.bin /lib/firmware/i915/kbl_dmc_ver1_01.bin
+root@mas:/mnt# update-initramfs -u
+update-initramfs: Generating /boot/initrd.img-4.8.0-45-generic
+root@mas:/mnt# 
