@@ -1,0 +1,25 @@
+<html>
+<head>
+<title>Konek monitor dengan HDMI konverter ke VGA</title>
+</head>
+<body>
+<h2>
+Konfigurasi pemula saat baru instal raspberry pi dengan sistem Ubuntu Mate 16.04.2 LTS
+</h2><br>
+<p>Enable dengan membuang kode taggar (#), pada baris kode berikut, dan beri nilai sesuai dengan deskripsi yang ada pada konfigurasi.<br>
+hdmi_force_hotplug=1<br>
+hdmi_drive=2<br>
+
+<p>Untuk memilih resolusi, edit pada baris:<br>
+hdmi_group=1<br>
+hdmi_mode=16<br>
+<br>
+<p>Agar layar full, edit pada:<br>
+overscan_left=0<br>
+overscan_right=0<br>
+overscan_top=0<br>
+overscan_bottom=0<br>
+disable_overscan=1<br>
+
+</body>
+</html>
