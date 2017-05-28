@@ -1,3 +1,3 @@
 ### www.wahyusetiyono.id
 
-Sumber untuk www.wahyusetiyonoid.
+Sumber untuk www.wahyusetiyono.id.
