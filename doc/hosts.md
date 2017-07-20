@@ -15,7 +15,7 @@ ff02::2 ip6-allrouters
 
 ##unblock internet negative
 
-#Reddit
+# Reddit
 
 151.101.129.140 reddit.com
 
@@ -59,7 +59,7 @@ ff02::2 ip6-allrouters
 
 151.101.45.140 ssl.reddit.com
 
-##Telegram
+# Telegram
 
 149.154.167.118 t.me
 
@@ -83,7 +83,7 @@ ff02::2 ip6-allrouters
 
 149.154.171.22 flora-1.web.telegram.org
 
-##Vimeo
+# Vimeo
 
 151.101.50.109  i.vimeocdn.com
 
@@ -99,7 +99,7 @@ ff02::2 ip6-allrouters
 
 151.101.0.217 player.vimeo.com
 
-##Imgur
+# Imgur
 
 151.101.24.193 imgur.com
 
